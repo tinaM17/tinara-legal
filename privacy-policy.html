@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Tinara</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #FDF8F5;
+      color: #2D1F1A;
+      line-height: 1.7;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #E8637A 0%, #F5956B 100%);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .header-brand {
+      font-size: 28px;
+      font-weight: 800;
+      color: white;
+      letter-spacing: 3px;
+      margin-bottom: 8px;
+    }
+    .header-tagline {
+      font-size: 13px;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.05em;
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: white;
+      margin-top: 20px;
+      opacity: 0.95;
+    }
+    .header .dates {
+      font-size: 12px;
+      color: rgba(255,255,255,0.75);
+      margin-top: 6px;
+    }
+
+    /* Nav */
+    .nav {
+      background: white;
+      border-bottom: 1px solid #F0E4DF;
+      padding: 0 24px;
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .nav a {
+      display: block;
+      padding: 14px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #9A7B72;
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    .nav a:hover { color: #E8637A; border-bottom-color: #E8637A; }
+
+    /* Content */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    /* Intro box */
+    .intro-box {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 32px;
+      border: 1px solid #F0E4DF;
+      border-left: 4px solid #E8637A;
+    }
+    .intro-box p {
+      font-size: 14px;
+      color: #9A7B72;
+      line-height: 1.7;
+    }
+
+    /* Sections */
+    .section {
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 16px;
+      border: 1px solid #F0E4DF;
+    }
+    .section-number {
+      display: inline-block;
+      background: #E8637A;
+      color: white;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      letter-spacing: 0.05em;
+    }
+    .section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #2D1F1A;
+      margin-bottom: 12px;
+    }
+    .section h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #2D1F1A;
+      margin: 16px 0 8px;
+    }
+    .section p {
+      font-size: 14px;
+      color: #6B4F47;
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .section ul li {
+      font-size: 14px;
+      color: #6B4F47;
+      padding: 6px 0 6px 20px;
+      position: relative;
+      border-bottom: 0.5px solid #F9F0ED;
+      line-height: 1.7;
+    }
+    .section ul li:last-child { border-bottom: none; }
+    .section ul li::before {
+      content: '🌸';
+      font-size: 10px;
+      position: absolute;
+      left: 0;
+      top: 8px;
+    }
+    .section ul.no-style li::before { content: none; }
+    .section ul.no-style li { padding-left: 0; }
+
+    /* Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 13px;
+    }
+    th {
+      background: #FDF8F5;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+      color: #2D1F1A;
+      border-bottom: 2px solid #F0E4DF;
+    }
+    td {
+      padding: 10px 14px;
+      color: #6B4F47;
+      border-bottom: 1px solid #F9F0ED;
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+
+    /* Highlight box */
+    .highlight {
+      background: #FFF0F3;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 12px 0;
+      border-left: 3px solid #E8637A;
+    }
+    .highlight p {
+      font-size: 13px;
+      color: #E8637A;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .green-highlight {
+      background: #F0FAF6;
+      border-left-color: #5BA08A;
+    }
+    .green-highlight p { color: #5BA08A; }
+
+    /* Contact box */
+    .contact-box {
+      background: linear-gradient(135deg, #E8637A 0%, #F5956B 100%);
+      border-radius: 16px;
+      padding: 28px;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .contact-box h2 { color: white; font-size: 18px; margin-bottom: 8px; }
+    .contact-box p  { color: rgba(255,255,255,0.9); font-size: 14px; }
+    .contact-box a  {
+      display: inline-block;
+      background: white;
+      color: #E8637A;
+      font-weight: 700;
+      padding: 10px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      margin-top: 14px;
+    }
+
+    /* Disclaimer */
+    .disclaimer {
+      background: #FFF9F0;
+      border: 1px solid #F5D4A0;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 12px;
+    }
+    .disclaimer p {
+      font-size: 13px;
+      color: #8B6914;
+      margin: 0;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: #C4A99F;
+      border-top: 1px solid #F0E4DF;
+    }
+    .footer a { color: #E8637A; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .header { padding: 36px 20px 32px; }
+      .container { padding: 24px 16px 60px; }
+      .section { padding: 20px; }
+      table { font-size: 12px; }
+      th, td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-brand">🌸 TINARA</div>
+    <div class="header-tagline">Your cycle · Your rhythm · Your life</div>
+    <h1>Privacy Policy</h1>
+    <div class="dates">Last updated: June 27, 2026 &nbsp;·&nbsp; Effective: June 27, 2026</div>
+  </div>
+
+  <!-- Nav -->
+  <div class="nav">
+    <a href="#information">Information</a>
+    <a href="#usage">How We Use</a>
+    <a href="#ai">AI Chat</a>
+    <a href="#security">Security</a>
+    <a href="#sharing">Sharing</a>
+    <a href="#rights">Your Rights</a>
+    <a href="#contact">Contact</a>
+    <a href="terms-of-service.html">Terms of Service →</a>
+  </div>
+
+  <div class="container">
+
+    <!-- Intro -->
+    <div class="intro-box">
+      <p>Welcome to Tinara, a women's wellness application developed by <strong>Tina Majumder</strong>. We are committed to protecting your personal health information. This policy explains what we collect, how we use it, and your rights over your data.</p>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="section" id="information">
+      <span class="section-number">SECTION 1</span>
+      <h2>Information We Collect</h2>
+
+      <h3>Information you provide directly</h3>
+      <ul>
+        <li><strong>Account information</strong> — your name, email address, and password</li>
+        <li><strong>Body information</strong> — weight, height, and date of birth (to calculate personalised goals)</li>
+        <li><strong>Menstrual cycle data</strong> — last period date, cycle length, period length, flow level, and symptoms</li>
+        <li><strong>Daily health logs</strong> — water intake, meals, calorie info, exercise, sleep hours, and mood</li>
+        <li><strong>Goals and preferences</strong> — wellness goals selected during onboarding</li>
+        <li><strong>AI chat messages</strong> — messages you send to the Tinara AI companion</li>
+      </ul>
+
+      <h3>Information collected automatically</h3>
+      <ul>
+        <li><strong>Device information</strong> — device type, operating system version</li>
+        <li><strong>Usage data</strong> — features you use and how often you open the app</li>
+        <li><strong>Crash reports</strong> — technical information to help us fix bugs</li>
+      </ul>
+
+      <h3>Information from Google (if you sign in with Google)</h3>
+      <ul>
+        <li>Your name and email address from your Google account</li>
+        <li>Your Google profile photo (if available)</li>
+        <li>We do not receive your Google password</li>
+      </ul>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section" id="usage">
+      <span class="section-number">SECTION 2</span>
+      <h2>How We Use Your Information</h2>
+
+      <table>
+        <tr>
+          <th>Purpose</th>
+          <th>What we use</th>
+        </tr>
+        <tr><td>Provide the app</td><td>Account info, cycle data, health logs</td></tr>
+        <tr><td>Personalise your experience</td><td>Body info, cycle phase, goals</td></tr>
+        <tr><td>Calculate health goals</td><td>Weight, height, cycle data</td></tr>
+        <tr><td>Send notifications</td><td>Period reminders, water reminders</td></tr>
+        <tr><td>Send emails</td><td>Welcome email, password reset</td></tr>
+        <tr><td>Power the AI chat</td><td>Your messages and cycle context</td></tr>
+        <tr><td>Improve the app</td><td>Usage data, crash reports</td></tr>
+      </table>
+
+      <div class="highlight">
+        <p>🚫 We NEVER use your data for advertising, selling to third parties, or building advertising profiles.</p>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section" id="ai">
+      <span class="section-number">SECTION 3</span>
+      <h2>AI Chat and Data Processing</h2>
+      <p>Tinara includes an AI companion powered by Claude (provided by Anthropic, Inc.). When you send a message:</p>
+      <ul>
+        <li>Your message and cycle context are sent to Anthropic's servers to generate a response</li>
+        <li>Anthropic processes this data per their own privacy policy (anthropic.com/privacy)</li>
+        <li>We do not store your full chat history beyond the current session</li>
+        <li>Chat content is not used to train AI models without your explicit consent</li>
+      </ul>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section" id="security">
+      <span class="section-number">SECTION 4</span>
+      <h2>Data Storage and Security</h2>
+      <p>Your data is stored securely using <strong>Supabase</strong> with industry-standard security practices.</p>
+      <ul>
+        <li>All data is transmitted using <strong>HTTPS encryption</strong> (TLS 1.2 or higher)</li>
+        <li>Your password is <strong>hashed</strong> and never stored in plain text</li>
+        <li>Health data is protected using <strong>row-level security</strong> — only you can access your own data</li>
+        <li>We do not store your Google login credentials</li>
+        <li>API keys and secrets are stored securely server-side</li>
+      </ul>
+      <div class="highlight green-highlight">
+        <p>✅ If you delete your account, all your personal data is permanently deleted within 30 days.</p>
+      </div>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section" id="sharing">
+      <span class="section-number">SECTION 5</span>
+      <h2>Sharing Your Information</h2>
+      <p>We do not sell, rent, or trade your personal information. We only share data with trusted service providers to operate the app:</p>
+
+      <table>
+        <tr>
+          <th>Provider</th>
+          <th>Purpose</th>
+        </tr>
+        <tr><td><strong>Supabase</strong></td><td>Database and authentication</td></tr>
+        <tr><td><strong>Anthropic</strong></td><td>AI chat responses</td></tr>
+        <tr><td><strong>Resend</strong></td><td>Sending emails</td></tr>
+        <tr><td><strong>Google</strong></td><td>Sign in with Google</td></tr>
+      </table>
+
+      <div class="highlight">
+        <p>🌸 We never share your health data with employers, insurance companies, or advertisers — ever.</p>
+      </div>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="section" id="rights">
+      <span class="section-number">SECTION 6</span>
+      <h2>Your Rights</h2>
+
+      <h3>Right to access</h3>
+      <p>View all your data inside the app at any time — your profile, cycle logs, and health data are always visible to you.</p>
+
+      <h3>Right to correction</h3>
+      <p>Update your information at any time via <strong>Settings → Edit Profile</strong>.</p>
+
+      <h3>Right to deletion</h3>
+      <p>Delete your account from <strong>Settings → Edit Profile → Delete my account</strong>, or email us. All data is permanently deleted within 30 days.</p>
+
+      <h3>Right to data portability</h3>
+      <p>Request a copy of your data by emailing us. We will provide it in a readable format within 30 days.</p>
+
+      <div class="highlight green-highlight">
+        <p>🇮🇳 Indian users: You have rights under the Digital Personal Data Protection Act (DPDP) 2023, including the right to know, correct, and erase your data.</p>
+      </div>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="section">
+      <span class="section-number">SECTION 7</span>
+      <h2>Children's Privacy</h2>
+      <p>Tinara is intended for users aged <strong>13 and above</strong>. We do not knowingly collect information from children under 13. If you believe a child has created an account, contact us immediately and we will delete it.</p>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="section">
+      <span class="section-number">SECTION 8</span>
+      <h2>Medical Disclaimer</h2>
+      <div class="disclaimer">
+        <p>⚠️ Tinara is a wellness tracking app and is <strong>not a medical device</strong>. Cycle predictions, AI responses, and health tips are for informational purposes only and are not medical advice. Always consult a qualified healthcare professional for medical concerns, especially regarding irregular periods, pregnancy, or any symptoms that worry you.</p>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-box" id="contact">
+      <h2>Questions or Concerns?</h2>
+      <p>We aim to respond to all privacy-related requests within 30 days.</p>
+      <a href="mailto:tinamajumder1720@gmail.com">📧 Contact Us</a>
+      <p style="margin-top:14px;font-size:12px;color:rgba(255,255,255,0.7)">
+        Tina Majumder &nbsp;·&nbsp; West Bengal, India &nbsp;·&nbsp; tinamajumder1720@gmail.com
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>© 2026 Tinara by Tina Majumder &nbsp;·&nbsp;
+      <a href="terms-of-service.html">Terms of Service</a> &nbsp;·&nbsp;
+      Made with 🌸 in India
+    </p>
+  </div>
+
+</body>
+</html>
