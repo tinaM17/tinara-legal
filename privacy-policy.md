@@ -146,7 +146,7 @@ You can control all notifications:
 
 ## 8. Children's Privacy
 
-Tinara is intended for users aged 13 and above. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has created an account, please contact us at support@tinara.app and we will delete the account immediately.
+Tinara is intended for users aged 13 and above. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has created an account, please contact us at tinamajumder1720@gmail.com and we will delete the account immediately.
 
 ---
 
@@ -161,10 +161,10 @@ You can view all your personal data inside the app at any time — your profile,
 You can update your personal information at any time via Settings → Edit Profile.
 
 ### Right to deletion
-You can delete your account from Settings → Edit Profile → Delete my account, or by emailing support@tinara.app. All your data will be permanently deleted within 30 days.
+You can delete your account from Settings → Edit Profile → Delete my account, or by emailing tinamajumder1720@gmail.com. All your data will be permanently deleted within 30 days.
 
 ### Right to data portability
-You may request a copy of your data by emailing support@tinara.app. We will provide it in a machine-readable format within 30 days.
+You may request a copy of your data by emailing tinamajumder1720@gmail.com. We will provide it in a machine-readable format within 30 days.
 
 ### Right to withdraw consent
 You may stop using the app and delete your account at any time. Deleting your account withdraws all consent you have given.
