@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service — Tinara</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #FDF8F5;
+      color: #2D1F1A;
+      line-height: 1.7;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #E8637A 0%, #F5956B 100%);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .header-brand {
+      font-size: 28px;
+      font-weight: 800;
+      color: white;
+      letter-spacing: 3px;
+      margin-bottom: 8px;
+    }
+    .header-tagline {
+      font-size: 13px;
+      color: rgba(255,255,255,0.85);
+      letter-spacing: 0.05em;
+    }
+    .header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      color: white;
+      margin-top: 20px;
+      opacity: 0.95;
+    }
+    .header .dates {
+      font-size: 12px;
+      color: rgba(255,255,255,0.75);
+      margin-top: 6px;
+    }
+
+    .nav {
+      background: white;
+      border-bottom: 1px solid #F0E4DF;
+      padding: 0 24px;
+      display: flex;
+      gap: 0;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .nav a {
+      display: block;
+      padding: 14px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #9A7B72;
+      text-decoration: none;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+    .nav a:hover { color: #E8637A; border-bottom-color: #E8637A; }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .intro-box {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 32px;
+      border: 1px solid #F0E4DF;
+      border-left: 4px solid #E8637A;
+    }
+    .intro-box p {
+      font-size: 14px;
+      color: #9A7B72;
+      line-height: 1.7;
+    }
+
+    .section {
+      background: white;
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 16px;
+      border: 1px solid #F0E4DF;
+    }
+    .section-number {
+      display: inline-block;
+      background: #E8637A;
+      color: white;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      letter-spacing: 0.05em;
+    }
+    .section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #2D1F1A;
+      margin-bottom: 12px;
+    }
+    .section h3 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #2D1F1A;
+      margin: 16px 0 8px;
+    }
+    .section p {
+      font-size: 14px;
+      color: #6B4F47;
+      line-height: 1.8;
+      margin-bottom: 10px;
+    }
+    .section ul {
+      list-style: none;
+      padding: 0;
+    }
+    .section ul li {
+      font-size: 14px;
+      color: #6B4F47;
+      padding: 6px 0 6px 22px;
+      position: relative;
+      border-bottom: 0.5px solid #F9F0ED;
+      line-height: 1.7;
+    }
+    .section ul li:last-child { border-bottom: none; }
+    .section ul li::before {
+      content: '🌸';
+      font-size: 10px;
+      position: absolute;
+      left: 0;
+      top: 8px;
+    }
+
+    .section ul.cross li::before { content: '✕'; color: #E8637A; font-size: 12px; font-weight: 700; top: 6px; }
+    .section ul.check li::before { content: '✓'; color: #5BA08A; font-size: 12px; font-weight: 700; top: 6px; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 13px;
+    }
+    th {
+      background: #FDF8F5;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+      color: #2D1F1A;
+      border-bottom: 2px solid #F0E4DF;
+    }
+    td {
+      padding: 10px 14px;
+      color: #6B4F47;
+      border-bottom: 1px solid #F9F0ED;
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+
+    .highlight {
+      background: #FFF0F3;
+      border-radius: 12px;
+      padding: 16px;
+      margin: 12px 0;
+      border-left: 3px solid #E8637A;
+    }
+    .highlight p {
+      font-size: 13px;
+      color: #E8637A;
+      font-weight: 600;
+      margin: 0;
+    }
+    .green-highlight { background: #F0FAF6; border-left-color: #5BA08A; }
+    .green-highlight p { color: #5BA08A; }
+    .yellow-highlight { background: #FFF9F0; border-left-color: #F5956B; }
+    .yellow-highlight p { color: #B8640A; }
+
+    .contact-box {
+      background: linear-gradient(135deg, #E8637A 0%, #F5956B 100%);
+      border-radius: 16px;
+      padding: 28px;
+      margin-top: 16px;
+      text-align: center;
+    }
+    .contact-box h2 { color: white; font-size: 18px; margin-bottom: 8px; }
+    .contact-box p  { color: rgba(255,255,255,0.9); font-size: 14px; }
+    .contact-box a  {
+      display: inline-block;
+      background: white;
+      color: #E8637A;
+      font-weight: 700;
+      padding: 10px 24px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 14px;
+      margin-top: 14px;
+    }
+
+    .disclaimer {
+      background: #FFF9F0;
+      border: 1px solid #F5D4A0;
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 12px;
+    }
+    .disclaimer p {
+      font-size: 13px;
+      color: #8B6914;
+      margin: 0;
+      line-height: 1.7;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 12px;
+      color: #C4A99F;
+      border-top: 1px solid #F0E4DF;
+    }
+    .footer a { color: #E8637A; text-decoration: none; }
+
+    @media (max-width: 600px) {
+      .header { padding: 36px 20px 32px; }
+      .container { padding: 24px 16px 60px; }
+      .section { padding: 20px; }
+      table { font-size: 12px; }
+      th, td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-brand">🌸 TINARA</div>
+    <div class="header-tagline">Your cycle · Your rhythm · Your life</div>
+    <h1>Terms of Service</h1>
+    <div class="dates">Last updated: June 27, 2026 &nbsp;·&nbsp; Effective: June 27, 2026</div>
+  </div>
+
+  <!-- Nav -->
+  <div class="nav">
+    <a href="#acceptance">Acceptance</a>
+    <a href="#account">Account</a>
+    <a href="#service">Service</a>
+    <a href="#use">Acceptable Use</a>
+    <a href="#health">Health Info</a>
+    <a href="#ip">Intellectual Property</a>
+    <a href="#liability">Liability</a>
+    <a href="#contact">Contact</a>
+    <a href="privacy-policy.html">Privacy Policy →</a>
+  </div>
+
+  <div class="container">
+
+    <!-- Intro -->
+    <div class="intro-box">
+      <p>By downloading, installing, or using Tinara, you agree to be bound by these Terms of Service. These Terms form a legally binding agreement between you and <strong>Tina Majumder</strong>, the developer of Tinara. Please read them carefully before using the app.</p>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="section" id="acceptance">
+      <span class="section-number">SECTION 1</span>
+      <h2>Acceptance of Terms</h2>
+      <p>By accessing or using Tinara ("the app"), you confirm that you:</p>
+      <ul class="check">
+        <li>Are at least 13 years old</li>
+        <li>Are capable of forming a legally binding agreement</li>
+        <li>Are not prohibited from using the app under applicable law</li>
+        <li>Will provide accurate information during registration</li>
+        <li>Have read and agree to these Terms and our Privacy Policy</li>
+      </ul>
+      <p style="margin-top:12px">If you are between 13 and 18, please ensure a parent or guardian has reviewed these Terms.</p>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section" id="account">
+      <span class="section-number">SECTION 2</span>
+      <h2>Your Account</h2>
+
+      <h3>Registration</h3>
+      <p>You must create an account to use most features. You agree to provide accurate, complete information and keep your credentials secure. You may not share your account with anyone else.</p>
+
+      <h3>Account security</h3>
+      <p>You are responsible for all activity that occurs under your account. Notify us immediately at <a href="mailto:tinamajumder1720@gmail.com" style="color:#E8637A">tinamajumder1720@gmail.com</a> if you suspect unauthorised access.</p>
+
+      <h3>Account termination</h3>
+      <p>We may suspend or terminate your account without prior notice if you violate these Terms. You may also delete your account at any time from <strong>Settings → Edit Profile → Delete my account</strong>.</p>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section" id="service">
+      <span class="section-number">SECTION 3</span>
+      <h2>What Tinara Provides</h2>
+
+      <p>Tinara is a personal wellness tracking app that offers:</p>
+      <ul>
+        <li>Menstrual cycle tracking and period predictions</li>
+        <li>Daily health logging — water, meals, exercise, sleep, and mood</li>
+        <li>Phase-based workout and nutrition recommendations</li>
+        <li>AI-powered wellness chat companion</li>
+        <li>Push notifications and email reminders for your cycle</li>
+        <li>Late period detection and guidance</li>
+      </ul>
+
+      <div class="highlight">
+        <p>⚠️ Tinara is NOT a medical device. Nothing in the app constitutes medical advice, diagnosis, or treatment.</p>
+      </div>
+
+      <p>We do not guarantee that the app will always be available, error-free, or uninterrupted. We may update, modify, or discontinue features with or without notice.</p>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section" id="use">
+      <span class="section-number">SECTION 4</span>
+      <h2>Acceptable Use</h2>
+
+      <p>You agree to use Tinara only for lawful personal wellness purposes. You agree NOT to:</p>
+      <ul class="cross">
+        <li>Use the app for any unlawful or harmful purpose</li>
+        <li>Attempt to access another user's data or account</li>
+        <li>Reverse engineer, decompile, or tamper with the app</li>
+        <li>Upload harmful, offensive, or malicious content</li>
+        <li>Use the app in a way that damages or overburdens our systems</li>
+        <li>Impersonate another person or entity</li>
+        <li>Use the app for competitive intelligence gathering</li>
+        <li>Create multiple accounts to bypass restrictions</li>
+      </ul>
+
+      <div class="highlight">
+        <p>🚫 Violation of these rules may result in immediate account termination without refund.</p>
+      </div>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section" id="health">
+      <span class="section-number">SECTION 5</span>
+      <h2>Health Information Disclaimer</h2>
+
+      <p>Tinara provides wellness information for general informational purposes only:</p>
+
+      <table>
+        <tr>
+          <th>Feature</th>
+          <th>Important note</th>
+        </tr>
+        <tr>
+          <td>Cycle predictions</td>
+          <td>Estimates only — not guaranteed to be accurate. Cycles vary.</td>
+        </tr>
+        <tr>
+          <td>AI chat responses</td>
+          <td>Generated by AI — not a substitute for professional medical advice.</td>
+        </tr>
+        <tr>
+          <td>Nutrition guidance</td>
+          <td>General information — may not suit your specific health condition.</td>
+        </tr>
+        <tr>
+          <td>Late period alerts</td>
+          <td>Informational only — many factors can delay a period.</td>
+        </tr>
+        <tr>
+          <td>Exercise plans</td>
+          <td>General wellness guidance — consult a doctor if you have conditions.</td>
+        </tr>
+      </table>
+
+      <div class="disclaimer">
+        <p>⚠️ Please consult a qualified doctor or gynaecologist for: irregular or frequently missed periods, severe symptoms during your cycle, pregnancy or fertility concerns, or any health condition that worries you. Tinara does not diagnose, treat, or cure any medical condition.</p>
+      </div>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="section" id="ip">
+      <span class="section-number">SECTION 6</span>
+      <h2>Intellectual Property</h2>
+
+      <p>All content in Tinara is owned by <strong>Tina Majumder</strong> and protected by copyright law, including:</p>
+      <ul>
+        <li>The Tinara name, logo, and brand identity</li>
+        <li>App design, user interface, and graphics</li>
+        <li>All text, illustrations, and content</li>
+      </ul>
+      <p style="margin-top:12px">You may not copy, reproduce, or distribute any part of the app without our written permission.</p>
+
+      <div class="highlight green-highlight">
+        <p>✅ Your personal health data always belongs to you. We do not claim ownership of the data you enter into the app.</p>
+      </div>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="section">
+      <span class="section-number">SECTION 7</span>
+      <h2>Third-Party Services</h2>
+      <p>Tinara integrates with third-party services. Use of these services is subject to their own terms:</p>
+
+      <table>
+        <tr>
+          <th>Provider</th>
+          <th>Purpose</th>
+        </tr>
+        <tr><td><strong>Google</strong></td><td>Sign-in functionality</td></tr>
+        <tr><td><strong>Supabase</strong></td><td>Data storage and authentication</td></tr>
+        <tr><td><strong>Anthropic Claude</strong></td><td>AI chat responses</td></tr>
+        <tr><td><strong>Resend</strong></td><td>Email delivery</td></tr>
+        <tr><td><strong>Expo / EAS</strong></td><td>App builds and delivery</td></tr>
+      </table>
+
+      <p style="margin-top:12px">We are not responsible for the practices or availability of these third-party providers.</p>
+    </div>
+
+    <!-- Section 8 -->
+    <div class="section" id="liability">
+      <span class="section-number">SECTION 8</span>
+      <h2>Limitation of Liability</h2>
+
+      <p>The app is provided <strong>"as is"</strong> and <strong>"as available"</strong> without warranties of any kind. To the maximum extent permitted by law, Tina Majumder shall not be liable for:</p>
+      <ul class="cross">
+        <li>Any indirect, incidental, or consequential damages</li>
+        <li>Loss of data or personal information</li>
+        <li>Health outcomes resulting from reliance on app information</li>
+        <li>Service interruptions or technical failures</li>
+        <li>Any damages exceeding the amount you paid for the app in the last 12 months</li>
+      </ul>
+    </div>
+
+    <!-- Section 9 -->
+    <div class="section">
+      <span class="section-number">SECTION 9</span>
+      <h2>Governing Law</h2>
+      <p>These Terms are governed by the laws of <strong>India</strong>. Any disputes shall be resolved in the courts of <strong>West Bengal, India</strong>.</p>
+
+      <div class="highlight yellow-highlight">
+        <p>🇮🇳 For Indian users, consumer protection rights under the Consumer Protection Act 2019 and the Digital Personal Data Protection Act 2023 apply and are not waived by these Terms.</p>
+      </div>
+    </div>
+
+    <!-- Section 10 -->
+    <div class="section">
+      <span class="section-number">SECTION 10</span>
+      <h2>Changes to These Terms</h2>
+      <p>We may update these Terms from time to time. When we do:</p>
+      <ul>
+        <li>We will update the "Last updated" date at the top of this page</li>
+        <li>For significant changes, we will notify you via email or in-app notification</li>
+        <li>Continued use of the app after changes means you accept the updated Terms</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact-box" id="contact">
+      <h2>Questions about these Terms?</h2>
+      <p>We aim to respond within 30 days.</p>
+      <a href="mailto:tinamajumder1720@gmail.com">📧 Contact Us</a>
+      <p style="margin-top:14px;font-size:12px;color:rgba(255,255,255,0.7)">
+        Tina Majumder &nbsp;·&nbsp; West Bengal, India &nbsp;·&nbsp; tinamajumder1720@gmail.com
+      </p>
+    </div>
+
+    <p style="text-align:center;margin-top:24px;font-size:13px;color:#9A7B72;font-style:italic">
+      By using Tinara, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service.
+    </p>
+
+  </div>
+
+  <div class="footer">
+    <p>© 2026 Tinara by Tina Majumder &nbsp;·&nbsp;
+      <a href="privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp;
+      Made with 🌸 in India
+    </p>
+  </div>
+
+</body>
+</html>
